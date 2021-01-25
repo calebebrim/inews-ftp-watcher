@@ -1,0 +1,15 @@
+{
+    "clientId": "inews-ftp-watcher-vm",
+    "brokers": [
+        "pkc-ep9mm.us-east-2.aws.confluent.cloud:9092"
+    ],
+    "ssl": true,
+    "authenticationTimeout": 5000,
+    "reauthenticationThreshold": 10000,
+    "sasl": {
+        "mechanism": "plain",
+        "username": "MR7X5I2I4GMGBFKR",
+        "password": "VdNxxX237FbmYtRurDdR+QPNORprEeX2pMpojIdjuuN1PgDINvh5w7zzjtaOWfcs"
+    },
+    "main.input.topic": "inews-ftp-dev-input"
+}

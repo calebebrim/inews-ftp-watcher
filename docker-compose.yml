@@ -1,0 +1,15 @@
+version: '3.6'
+
+services:
+  inews-watcher:
+    hostname: inews-to-kafka
+    image: calebebrim/inews-ftp-watcher:1
+    restart: unless-stopped
+    volumes:
+      - ./config:/config
+    environment:
+      - CONFIG_PATH=/config
+      - PROCESSED_FILE_NAME=processed.json 
+      - FTP_CONFIG_FILE_NAME=ftp-config-docker.json 
+      - KAFKA_CONFIG_FILE_NAME=kafka-config-nsc.json 
+      - FTP_PATH=/Inews
