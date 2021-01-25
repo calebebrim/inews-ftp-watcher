@@ -1,0 +1,17 @@
+{
+    "clientId": "my-app",
+    "brokers": [
+        "tricycle-01.srvs.cloudkafka.com: 9094",
+        "tricycle-02.srvs.cloudkafka.com: 9094",
+        "tricycle-03.srvs.cloudkafka.com: 9094"
+    ],
+    "authenticationTimeout": 5000,
+    "reauthenticationThreshold": 10000,
+    "ssl": true,
+    "sasl": {
+        "mechanism": "scram-sha-256",
+        "username": "kkkfnadg",
+        "password": "I2heX42-pREjBYSSrEuQyeBWP8p9y0oM"
+    },
+    "main.input.topic": "kkkfnadg-ingestion-test"
+}

@@ -10,6 +10,11 @@ services:
     environment:
       - CONFIG_PATH=/config
       - PROCESSED_FILE_NAME=processed.json 
-      - FTP_CONFIG_FILE_NAME=ftp-config-docker.json 
-      - KAFKA_CONFIG_FILE_NAME=kafka-config-nsc.json 
+      - FTP_CONFIG_FILE_NAME=ftp-config-example.json 
+      - KAFKA_CONFIG_FILE_NAME=kafka-config-karafka-cloud.json 
       - FTP_PATH=/Inews
+    logging:
+      driver: "json-file"
+      options:
+       max-file: "1"
+       max-size: "1g" 
